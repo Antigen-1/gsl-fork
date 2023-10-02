@@ -6,7 +6,7 @@ BUILD := $(PWD)/build
 
 all: Makefile
 	mkdir -p $(BUILD)
-	$(MAKEFILE) CFLAGS=-DHAVE_INLINE
+	$(MAKEFILE) CFLAGS='-DHAVE_INLINE -DGSL_RANGE_CHECK=0'
 	$(MAKEFILE) install
 
 configure: autogen.sh
