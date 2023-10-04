@@ -16,5 +16,5 @@ Makefile: configure
 	./configure --enable-maintainer-mode --prefix $(BUILD)
 
 clean: Makefile
-	-rm -rf build/ configure
 	$(MAKEFILE) clean
+	-rm -rf build/ configure
